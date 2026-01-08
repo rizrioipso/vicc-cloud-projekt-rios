@@ -35,12 +35,10 @@ Liefert den Status der Anwendung im JSON-Format.
 
 **Beispielantwort:**
 ```md
-
 ```json
-
 {
   "status": "ok"
 }
-
 ---
+
 
