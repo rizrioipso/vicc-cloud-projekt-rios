@@ -1,4 +1,5 @@
-VICC Cloud Project – Cloudflare Worker mit Terraform (IaC)
+VICC Cloud Project
+Cloudflare Worker mit Terraform (Infrastructure as Code)
 Projektübersicht
 
 Dieses Repository enthält die praktische Umsetzung einer serverlosen Cloud-Applikation im Rahmen des Moduls VICC.
@@ -30,6 +31,10 @@ Beispielantwort:
 }
 Architektur und Technologie
 
+Die Anwendung basiert auf einer vollständig serverlosen Architektur.
+
+Technologie-Stack:
+
 Cloud-Plattform: Cloudflare
 
 Compute: Cloudflare Workers (serverlos)
@@ -40,7 +45,7 @@ Infrastructure as Code: Terraform
 
 Versionskontrolle: Git / GitHub
 
-Die Anwendung läuft vollständig serverlos im globalen Cloudflare Edge Network.
+Die Anwendung läuft im globalen Cloudflare Edge Network.
 Es werden keine virtuellen Maschinen oder Container betrieben.
 
 Infrastructure as Code (Terraform)
@@ -57,7 +62,7 @@ Sicherheit
 
 API-Tokens werden lokal in terraform.tfvars gespeichert
 
-Diese Datei ist durch .gitignore ausgeschlossen
+Diese Datei ist durch .gitignore vom Repository ausgeschlossen
 
 Es befinden sich keine sensiblen Daten im Repository
 
@@ -65,10 +70,10 @@ Tests
 
 Die Anwendung wurde erfolgreich getestet.
 
-Browser
+Browser-Tests
 GET /
 GET /api/health
-Kommandozeile (CLI)
+Kommandozeilen-Tests (CLI)
 curl https://vicc-api-worker.vicc-rios.workers.dev
 curl https://vicc-api-worker.vicc-rios.workers.dev/api/health
 Projektstruktur
@@ -84,7 +89,7 @@ vicc-cloud-projekt-rios/
 │   └── terraform.lock.hcl
 ├── .gitignore
 └── README.md
-Kontext
+Kontext der Arbeit
 
 Dieses Projekt wurde im Rahmen einer schulischen Praxisarbeit umgesetzt.
 Der Fokus liegt auf Cloud-Technologien, serverlosen Architekturen und Infrastructure as Code.
