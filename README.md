@@ -1,4 +1,4 @@
-:::writing{id="83491" variant="standard"}
+
 # VICC Cloud Project  
 ## Cloudflare Worker mit Terraform (Infrastructure as Code)
 
@@ -34,7 +34,10 @@ https://vicc-api-worker.vicc-rios.workers.dev/api/health
 Liefert den Status der Anwendung im JSON-Format.
 
 **Beispielantwort:**
+```md
+
 ```json
+
 {
   "status": "ok"
 }
