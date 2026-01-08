@@ -33,7 +33,7 @@ Architektur und Technologie
 
 Die Anwendung basiert auf einer vollständig serverlosen Architektur.
 
-Technologie-Stack:
+Technologie-Stack
 
 Cloud-Plattform: Cloudflare
 
@@ -52,11 +52,13 @@ Infrastructure as Code (Terraform)
 
 Die Cloud-Infrastruktur wird deklarativ mit Terraform beschrieben.
 
-Der Cloudflare Worker wird als Terraform-Ressource verwaltet
+Verwaltung des Cloudflare Workers als Terraform-Ressource
 
-Änderungen sind reproduzierbar und versionierbar
+Reproduzierbare und versionierbare Infrastruktur
 
-Terraform-State und sensible Variablen werden nicht im Repository gespeichert
+Trennung von Code und Konfigurationsdaten
+
+Terraform-State und sensible Variablen werden nicht im Repository gespeichert.
 
 Sicherheit
 
@@ -64,16 +66,14 @@ API-Tokens werden lokal in terraform.tfvars gespeichert
 
 Diese Datei ist durch .gitignore vom Repository ausgeschlossen
 
-Es befinden sich keine sensiblen Daten im Repository
+Es befinden sich keine sensiblen Zugangsdaten im Repository
 
 Tests
-
-Die Anwendung wurde erfolgreich getestet.
-
-Browser-Tests
+Browser-Test
 GET /
+API-Test
 GET /api/health
-Kommandozeilen-Tests (CLI)
+Kommandozeilen-Test
 curl https://vicc-api-worker.vicc-rios.workers.dev
 curl https://vicc-api-worker.vicc-rios.workers.dev/api/health
 Projektstruktur
@@ -92,7 +92,7 @@ vicc-cloud-projekt-rios/
 Kontext der Arbeit
 
 Dieses Projekt wurde im Rahmen einer schulischen Praxisarbeit umgesetzt.
-Der Fokus liegt auf Cloud-Technologien, serverlosen Architekturen und Infrastructure as Code.
+Der Fokus liegt auf serverlosen Cloud-Technologien und Infrastructure as Code.
 
 Autor
 
