@@ -34,11 +34,12 @@ https://vicc-api-worker.vicc-rios.workers.dev/api/health
 Liefert den Status der Anwendung im JSON-Format.
 
 **Beispielantwort:**
-```md
+
 ```json
 {
   "status": "ok"
 }
----
+```
 
-
+## Autor
+Rizzo Rios
